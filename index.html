@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -15,23 +16,74 @@
         rel="stylesheet"
         href="style.css"
     >
+
 </head>
+
 
 <body>
 
-    <!-- =========================
+
+    <!-- =========================================
+         OPENING / WELCOME SCREEN
+    ========================================== -->
+
+    <div
+        id="welcomeScreen"
+        class="welcome-screen"
+    >
+
+        <div class="welcome-box">
+
+            <div class="welcome-cake">
+                🎂
+            </div>
+
+            <h1>
+                A Little Surprise For You...
+            </h1>
+
+            <p>
+                Someone has something special
+                waiting for you ❤️
+            </p>
+
+            <p>
+                🔊 Put your volume up
+            </p>
+
+            <button onclick="enterSurprise()">
+                ❤️ Tap To Begin
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
          HERO SECTION
-    ========================== -->
+    ========================================== -->
 
     <section class="hero">
 
-        <div class="balloon balloon1">🎈</div>
-        <div class="balloon balloon2">🎈</div>
-        <div class="balloon balloon3">🎈</div>
+        <div class="balloon balloon1">
+            🎈
+        </div>
+
+        <div class="balloon balloon2">
+            🎈
+        </div>
+
+        <div class="balloon balloon3">
+            🎈
+        </div>
+
 
         <h1>
             🎂 Happy Birthday Sowmya ❤️
         </h1>
+
 
         <img
             src="images/photo1.jpeg"
@@ -39,21 +91,30 @@
             class="main-photo"
         >
 
+
         <p class="subtitle">
             Today isn't just another day...
         </p>
+
 
         <p>
             It's the day someone very special
             came into this world. ✨
         </p>
 
+
+        <p>
+            And today deserves to be
+            celebrated in a special way. ❤️
+        </p>
+
     </section>
 
 
-    <!-- =========================
-         SPECIAL LETTER
-    ========================== -->
+
+    <!-- =========================================
+         SPECIAL BIRTHDAY LETTER
+    ========================================== -->
 
     <section class="letter-section">
 
@@ -61,14 +122,18 @@
             💌 I Have Something To Tell You...
         </h2>
 
+
         <p>
-            Before you open your surprise,
-            there's a little message waiting for you.
+            Before you continue,
+            there's a little message
+            waiting for you.
         </p>
+
 
         <button onclick="openLetter()">
             💌 Open Your Letter
         </button>
+
 
 
         <div
@@ -80,17 +145,20 @@
                 Dear Sowmya ❤️
             </h2>
 
+
             <p>
                 Some people make ordinary moments
                 feel special simply by being
                 a part of them.
             </p>
 
+
             <p>
                 On your birthday, I hope you realize
                 how much happiness and positivity
                 you bring to the people around you.
             </p>
+
 
             <p>
                 May this new chapter of your life
@@ -100,10 +168,22 @@
                 to smile.
             </p>
 
+
             <p>
-                Never stop being the wonderful
-                person you are. ✨
+                May the dreams you're working towards
+                slowly turn into reality,
+                and may every challenge make you
+                even stronger.
             </p>
+
+
+            <p>
+                Keep smiling.
+                Keep shining.
+                Keep being the wonderful person
+                you are. ✨
+            </p>
+
 
             <h3>
                 Happy Birthday, Sowmya! 🎂❤️
@@ -114,9 +194,180 @@
     </section>
 
 
-    <!-- =========================
-         MEMORIES SECTION
-    ========================== -->
+
+    <!-- =========================================
+         WHY YOU'RE SPECIAL
+    ========================================== -->
+
+    <section class="special-reasons">
+
+        <h2>
+            💝 Why You're Special 💝
+        </h2>
+
+
+        <p class="reason-intro">
+            There are many reasons...
+            Here are just a few. ❤️
+        </p>
+
+
+
+        <div class="reason-container">
+
+
+            <!-- CARD 1 -->
+
+            <div
+                class="reason-card"
+                onclick="revealReason(this)"
+            >
+
+                <div class="closed-reason">
+
+                    🎁
+
+                    <span>
+                        Click Me
+                    </span>
+
+                </div>
+
+
+                <div class="reason-message">
+
+                    <h3>
+                        😊 Your Smile
+                    </h3>
+
+                    <p>
+                        Because your smile can make
+                        an ordinary moment feel
+                        a little more special. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div
+                class="reason-card"
+                onclick="revealReason(this)"
+            >
+
+                <div class="closed-reason">
+
+                    🎁
+
+                    <span>
+                        Click Me
+                    </span>
+
+                </div>
+
+
+                <div class="reason-message">
+
+                    <h3>
+                        ❤️ Your Kindness
+                    </h3>
+
+                    <p>
+                        The kindness you show
+                        and the way you care
+                        make you truly special.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div
+                class="reason-card"
+                onclick="revealReason(this)"
+            >
+
+                <div class="closed-reason">
+
+                    🎁
+
+                    <span>
+                        Click Me
+                    </span>
+
+                </div>
+
+
+                <div class="reason-message">
+
+                    <h3>
+                        ✨ Your Presence
+                    </h3>
+
+                    <p>
+                        Some people simply make
+                        moments better just by
+                        being there.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div
+                class="reason-card"
+                onclick="revealReason(this)"
+            >
+
+                <div class="closed-reason">
+
+                    🎁
+
+                    <span>
+                        Click Me
+                    </span>
+
+                </div>
+
+
+                <div class="reason-message">
+
+                    <h3>
+                        🌸 Simply Being You
+                    </h3>
+
+                    <p>
+                        Never change the beautiful
+                        person that makes you
+                        uniquely you. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MEMORY SECTION
+    ========================================== -->
 
     <section class="memories">
 
@@ -124,10 +375,12 @@
             📸 A Beautiful Memory
         </h2>
 
+
         <p>
             Some moments deserve to be
-            remembered forever ❤️
+            remembered forever. ❤️
         </p>
+
 
         <div class="gallery">
 
@@ -149,9 +402,10 @@
     </section>
 
 
-    <!-- =========================
-         SURPRISE BUTTON
-    ========================== -->
+
+    <!-- =========================================
+         GIFT / COUNTDOWN SECTION
+    ========================================== -->
 
     <section class="gift-section">
 
@@ -159,16 +413,26 @@
             Wait... There's One More Thing 😏
         </h2>
 
+
         <p>
             I saved the best part for last.
         </p>
+
+
+        <p>
+            Ready?
+        </p>
+
 
         <button
             class="gift-button"
             onclick="startCountdown()"
         >
+
             🎁 Click for Surprise
+
         </button>
+
 
 
         <!-- Countdown appears here -->
@@ -181,18 +445,21 @@
     </section>
 
 
-    <!-- =========================
+
+    <!-- =========================================
          FINAL SURPRISE
-    ========================== -->
+    ========================================== -->
 
     <section
         id="surprise"
         class="final-surprise"
     >
 
+
         <h1>
             🎉 SURPRISE SOWMYA! 🎉
         </h1>
+
 
 
         <div class="birthday-cake">
@@ -200,9 +467,11 @@
         </div>
 
 
+
         <h2>
             Happy Birthday ❤️
         </h2>
+
 
 
         <p>
@@ -213,22 +482,32 @@
         </p>
 
 
+
         <h2>
             ✨ You Deserve An Amazing Year Ahead! ✨
         </h2>
 
 
+
         <p class="final-wish">
-            Keep smiling, keep shining,
-            and have the happiest birthday ever! ❤️
+
+            Keep smiling,
+            keep shining,
+            and have the happiest
+            birthday ever! ❤️
+
         </p>
+
 
 
         <p>
+
             May every day ahead bring you
-            happiness, success, peace
-            and wonderful memories.
+            happiness, success, peace,
+            adventures and wonderful memories.
+
         </p>
+
 
 
         <h2>
@@ -236,20 +515,101 @@
         </h2>
 
 
+
         <h1>
             🎂 Happy Birthday Sowmya! 🎂
         </h1>
 
+
+
+        <!-- =====================================
+             FINAL SECRET
+        ====================================== -->
+
+        <div class="secret-area">
+
+
+            <button onclick="openSecret()">
+
+                ✨ One Last Secret...
+
+            </button>
+
+
+
+            <div
+                id="secretMessage"
+                class="secret-message"
+            >
+
+
+                <h2>
+                    ❤️ One Last Thing...
+                </h2>
+
+
+                <p>
+                    Out of all the days
+                    in the year,
+                    today deserves a little
+                    extra magic...
+                </p>
+
+
+                <p>
+                    Because today is yours. ✨
+                </p>
+
+
+                <p>
+                    I hope you remember this day
+                    not just because it's your birthday,
+                    but because it reminds you
+                    how special you are.
+                </p>
+
+
+                <h1>
+                    Happy Birthday,
+                    Sowmya! 🎂❤️
+                </h1>
+
+
+                <p>
+                    May this be the beginning
+                    of your most beautiful
+                    year yet. ✨
+                </p>
+
+
+                <div class="birthday-cake">
+                    🎂
+                </div>
+
+
+                <h2>
+                    Keep Smiling Always ❤️
+                </h2>
+
+
+            </div>
+
+        </div>
+
+
     </section>
 
 
-    <!-- =========================
-         MUSIC
-    ========================== -->
+
+    <!-- =========================================
+         BIRTHDAY MUSIC
+    ========================================== -->
 
     <audio
         id="birthdayMusic"
+        autoplay
         loop
+        preload="auto"
     >
 
         <source
@@ -262,22 +622,29 @@
     </audio>
 
 
-    <!-- Optional Music Button -->
+
+    <!-- =========================================
+         MUSIC PLAY / PAUSE BUTTON
+    ========================================== -->
 
     <button
         class="music-button"
         onclick="toggleMusic()"
         title="Play or Pause Music"
     >
+
         🎵
+
     </button>
 
 
-    <!-- =========================
+
+    <!-- =========================================
          JAVASCRIPT
-    ========================== -->
+    ========================================== -->
 
     <script src="script.js"></script>
+
 
 </body>
 
