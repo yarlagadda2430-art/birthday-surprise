@@ -3,43 +3,281 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Happy Birthday Sowmya ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <h1>🎂 Happy Birthday Sowmya 💕</h1>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
 
-    <img src="images/photo1.jpeg" alt="Sowmya Birthday Photo">
+    <section class="hero">
 
-    <p>
-        Wishing you lots of happiness,
-        beautiful memories and an amazing year ahead! 🎉
-    </p>
+        <div class="balloon balloon1">🎈</div>
+        <div class="balloon balloon2">🎈</div>
+        <div class="balloon balloon3">🎈</div>
 
-    <button onclick="showSurprise()">
-        🎁 Click for Surprise
+        <h1>
+            🎂 Happy Birthday Sowmya ❤️
+        </h1>
+
+        <img
+            src="images/photo1.jpeg"
+            alt="Sowmya Birthday Photo"
+            class="main-photo"
+        >
+
+        <p class="subtitle">
+            Today isn't just another day...
+        </p>
+
+        <p>
+            It's the day someone very special
+            came into this world. ✨
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         SPECIAL LETTER
+    ========================== -->
+
+    <section class="letter-section">
+
+        <h2>
+            💌 I Have Something To Tell You...
+        </h2>
+
+        <p>
+            Before you open your surprise,
+            there's a little message waiting for you.
+        </p>
+
+        <button onclick="openLetter()">
+            💌 Open Your Letter
+        </button>
+
+
+        <div
+            id="specialLetter"
+            class="special-letter"
+        >
+
+            <h2>
+                Dear Sowmya ❤️
+            </h2>
+
+            <p>
+                Some people make ordinary moments
+                feel special simply by being
+                a part of them.
+            </p>
+
+            <p>
+                On your birthday, I hope you realize
+                how much happiness and positivity
+                you bring to the people around you.
+            </p>
+
+            <p>
+                May this new chapter of your life
+                be filled with beautiful memories,
+                unexpected adventures, success,
+                laughter and countless reasons
+                to smile.
+            </p>
+
+            <p>
+                Never stop being the wonderful
+                person you are. ✨
+            </p>
+
+            <h3>
+                Happy Birthday, Sowmya! 🎂❤️
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MEMORIES SECTION
+    ========================== -->
+
+    <section class="memories">
+
+        <h2>
+            📸 A Beautiful Memory
+        </h2>
+
+        <p>
+            Some moments deserve to be
+            remembered forever ❤️
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photo1.jpeg"
+                    alt="Beautiful Memory"
+                >
+
+                <p>
+                    A Special Memory ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SURPRISE BUTTON
+    ========================== -->
+
+    <section class="gift-section">
+
+        <h2>
+            Wait... There's One More Thing 😏
+        </h2>
+
+        <p>
+            I saved the best part for last.
+        </p>
+
+        <button
+            class="gift-button"
+            onclick="startCountdown()"
+        >
+            🎁 Click for Surprise
+        </button>
+
+
+        <!-- Countdown appears here -->
+
+        <div
+            id="countdown"
+            class="countdown"
+        ></div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SURPRISE
+    ========================== -->
+
+    <section
+        id="surprise"
+        class="final-surprise"
+    >
+
+        <h1>
+            🎉 SURPRISE SOWMYA! 🎉
+        </h1>
+
+
+        <div class="birthday-cake">
+            🎂
+        </div>
+
+
+        <h2>
+            Happy Birthday ❤️
+        </h2>
+
+
+        <p>
+            May your smile always stay this bright,
+            your dreams keep getting bigger,
+            and your life be filled with
+            beautiful moments.
+        </p>
+
+
+        <h2>
+            ✨ You Deserve An Amazing Year Ahead! ✨
+        </h2>
+
+
+        <p class="final-wish">
+            Keep smiling, keep shining,
+            and have the happiest birthday ever! ❤️
+        </p>
+
+
+        <p>
+            May every day ahead bring you
+            happiness, success, peace
+            and wonderful memories.
+        </p>
+
+
+        <h2>
+            Once Again...
+        </h2>
+
+
+        <h1>
+            🎂 Happy Birthday Sowmya! 🎂
+        </h1>
+
+    </section>
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio
+        id="birthdayMusic"
+        loop
+    >
+
+        <source
+            src="music/music.mp3"
+            type="audio/mpeg"
+        >
+
+        Your browser does not support audio.
+
+    </audio>
+
+
+    <!-- Optional Music Button -->
+
+    <button
+        class="music-button"
+        onclick="toggleMusic()"
+        title="Play or Pause Music"
+    >
+        🎵
     </button>
 
-    <div id="surprise" style="display:none;">
 
-    <h2>🎉 Surprise Sowmya! 🎉</h2>
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-    <p>
-        May all your dreams come true 💕
-    </p>
-
-</div>
-
-<audio id="birthdayMusic" loop>
-    <source src="music/music.mp3" type="audio/mpeg">
-</audio>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
